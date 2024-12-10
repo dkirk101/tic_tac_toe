@@ -2,9 +2,9 @@ class Player
 
   @@total_number_of_players = 0
 
-  def initialize
+  def initialize(marker)
     @marker = marker
-    puts "Enter name for Player#{@@total_number_of_players + 1}"
+    puts "\nEnter name for Player#{@@total_number_of_players + 1}"
     @name = gets.chomp
     @@total_number_of_players += 1
   end
