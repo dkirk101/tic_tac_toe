@@ -3,11 +3,15 @@
 class Game
 
  def initialize
-  @players = [player_one, player_two]
+  @players = [Player.new, Player.new]
   @board = Array.new(9)
-  puts "A new round of #{self} has begun!"
+  puts "\nA new round of #{self} has begun!\n" +
+  "#{@players[0].name} vs. #{@players[1].name}"
+  p @board
  end    
  
+ attr_accessor :board
+
  def to_s
   'Tic Tac Toe'
  end
