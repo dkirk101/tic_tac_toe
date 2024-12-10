@@ -41,3 +41,12 @@
 #     - Announce if true
 #     - Display the board
 #   - Swap players if necessary
+#   
+
+## Add a welcome/instructional message?
+
+require_relative 'lib/game'
+require_relative 'lib/player'
+
+
+Game.new
