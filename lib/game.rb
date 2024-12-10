@@ -13,7 +13,7 @@ class Game
 
  def display_board
    column_separator = " | "
-   row_separator = "---+---+---"
+   row_separator = "--+---+--"
    ## I do not understand this method
    label_for_position = lambda{ |position| @board[position] ? @board[position] : position}
  
