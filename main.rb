@@ -6,16 +6,17 @@
 # Build your game, taking care to not share information between classes any more than you have to.
 # https://www.theodinproject.com/lessons/ruby-tic-tac-toe
 
-# The game
+# The Game --Game is a class of itself, when initialized will contain a board (array) and 2 players (Classes)
 # 
-# 2 players 
+# 2 players -- Players will be a class that contain name and marker
 #   - Both are human for this project
 #   - Prompt for player name
-#   - Assign a marker
+#   - Assign a marker -- This should come from the game
 #   
-# 1 board
+# 1 board                             -- The board will actually just be an array and most functionality
+#                                         will be handled by the Game
 #   - 3 rows with 3 columns
-#   - Positions 1-9
+#   - Positions 1-9                   --This will be an array
 #   
 # First player selects a position
 #   - Check whether or not that position is available
@@ -40,5 +41,3 @@
 #     - Announce if true
 #     - Display the board
 #   - Swap players if necessary
-#   
-#
